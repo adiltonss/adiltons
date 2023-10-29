@@ -33,8 +33,12 @@ export default function Projects(){
                 draggable={true}
                 >
                     <div className={styles.item}>
-                        <img src={coffeStackpreview} alt="" />
-                        <h3>Coffe Stack</h3>
+                        <div className={styles.imgCont}>
+                            <img src={coffeStackpreview} alt="" />
+                            <a href="https://stack-coffee.vercel.app/" target='blank'></a>
+                        </div>
+
+                        <h3><a href="https://stack-coffee.vercel.app/" target='blank'>Coffe Stack</a></h3>
                         <p>Uma landing page feita para um café, feita com tecnologias específicas para tornar a página atrativa e fornecer uma fantástica experiência.</p>
                     </div>
                     <div className={styles.item}>
