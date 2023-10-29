@@ -1,0 +1,108 @@
+.cont{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    h2{
+        font-family: "Mont semi bold";
+        font-size: 1.8em;
+        text-align: center;
+        @media screen and (min-width: 600px){
+            font-size: 2em;
+        }
+    }
+    h2::after{
+        content: '';
+        display: block;
+        width: 150px;
+        height: 3px;
+        background: #d22424;
+        margin: 15px auto 0 auto;
+    }
+    .mainCont{
+        width: 90%;
+        height: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        @media screen and (min-width: 600px){
+            flex-direction: row;
+        }
+        .footerHero, .socialLinks{
+            width: 100%;
+            height: 50%;
+            @media screen and (min-width: 600px){
+                width: 50%;
+                height: 100%;
+                
+            }
+            .item{
+                width: 50px;
+                height: 50px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: thin solid #ffffff00;
+                border-radius: 5px;
+                a{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    border: none;
+                }
+                img{
+                    width: 80%;
+                    
+                }
+            }
+        }
+
+        .socialLinks{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5em;
+            .item{
+                img{
+                    filter: invert(100%);
+                    pointer-events: none;
+                }
+                transition: .1s all linear;
+            }
+            .item:hover{
+                transform: translateY(-5px);
+            }
+        }
+
+        .footerHero{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            div{
+                width: 250px;
+                height: 250px;
+                background-image: url('../../assets/images/laptop.png');
+                background-position: center;
+                background-size: 100% 100%;
+                animation: bounce 2s infinite;
+            }
+        }
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); 
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}

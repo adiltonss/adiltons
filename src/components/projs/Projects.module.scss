@@ -1,0 +1,53 @@
+.cont{
+    width: 90%;
+    height: 90vh;
+    margin: 5em auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h2{
+        font-family: "Mont semi bold";
+        font-size: 1.8em;
+        text-align: center;
+        @media screen and (min-width: 600px){
+            font-size: 2em;
+        }
+    }
+    h2::after{
+        content: '';
+        display: block;
+        width: 150px;
+        height: 3px;
+        background: #d22424;
+        margin: 15px auto 0 auto;
+    }
+    .projects{
+        width: 100%;
+        height: 90%;
+        .carouselMobile{
+            height: 100%;
+            .item{
+                width: 100%;
+                height: 450px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+                border: thin solid #3b3b3b;
+                justify-content: center;
+                gap: 1em;
+                text-align: center;
+                img{
+                    width: 90%;
+                }
+                p{
+                    text-align: justify;
+                }
+                @media screen and (min-width: 800px) {
+                    width: 340px;
+                }
+            }
+        }
+    }
+}
