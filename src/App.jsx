@@ -26,7 +26,6 @@ function App() {
   const handleIntersection = (entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // Determinar qual componente está visível com base no elemento DOM
         if (entry.target === componentRefs.aboutMe.current) {
             setCurrentComponent(components.aboutme)
         } else if (entry.target === componentRefs.skills.current) {
@@ -55,7 +54,6 @@ function App() {
       }
     });
 
-    // Cleanup: honestamente eu não entendi essa parte, estudar depois ou perguntar pra alguém
     return () => {
       observers.forEach(observer => {
         observer.disconnect();

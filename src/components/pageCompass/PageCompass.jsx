@@ -2,7 +2,6 @@ import styles from './PageCompass.module.scss'
 
 export default function PageCompass({currentComp}) {
     function goToTarget(id){
-        console.log(id);
         const targetEl = document.getElementById(id)
         window.scrollTo({
             top:targetEl.offsetTop - 50,
