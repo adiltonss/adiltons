@@ -11,12 +11,12 @@ export default function Projects(){
             slidesToSlide: 3 // optional, default to 1.
         },
         tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 1,
+            breakpoint: { max: 1024, min: 800 },
+            items: 2,
             slidesToSlide: 1 // optional, default to 1.
         },
         mobile: {
-            breakpoint: { max: 464, min: 0 },
+            breakpoint: { max: 799, min: 0 },
             items: 1,
             slidesToSlide: 1 // optional, default to 1.
         }
@@ -38,7 +38,8 @@ export default function Projects(){
                             <a href="https://stack-coffee.vercel.app/" target='blank'></a>
                         </div>
 
-                        <h3><a href="https://stack-coffee.vercel.app/" target='blank'>Coffe Stack</a></h3>
+                        <h3><a href="https://stack-coffee.vercel.app/" target='blank'
+                        >Coffe Stack</a></h3>
                         <p>Uma landing page feita para um café, feita com tecnologias específicas para tornar a página atrativa e fornecer uma fantástica experiência.</p>
                     </div>
                     <div className={styles.item}>
