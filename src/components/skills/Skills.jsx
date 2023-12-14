@@ -44,7 +44,12 @@ export default function Skills(){
             title: "Git",
             desc: "Sistema de controle de versão para colaboração e rastreamento de alterações",
             id: 6
-        },
+        },{
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+            title: "Node Js",
+            desc: "Ambiente para criar aplicativos usando JavaScript no servidor",
+            id: 7
+        }
 
     ]
     

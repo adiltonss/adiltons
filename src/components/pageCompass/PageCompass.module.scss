@@ -1,6 +1,15 @@
 .cont {
     z-index: 1000;
-    @media screen and (min-width: 800px) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: #000000da;
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    border-bottom: thin solid #3d3d3d4c;
+    @media screen and (min-width: 1024px) {
         display: flex;
         position: fixed;
         top: 50%;
@@ -10,24 +19,21 @@
         width: 50px;
         height: 200px;
         background-color: transparent;
+        border-bottom: none;
     }
-    position: fixed;
-    top: -50px;
-    width: 100%;
-    height: 80px;
-    background-color: #1b1b1b;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
     .circle {
-        width: 15px;
-        height: 18px;
-        border-radius: 50%;
-        border: 2px solid #d22424;
-        position: relative;
+        width: 0;
+        flex-grow: calc(4);
+        @media screen and (min-width: 1024px) {
+            position: relative;
+            width: 15px;
+            height: 18px;
+            border-radius: 50%;
+            border: 2px solid #d22424;
+        }
 
         button {
+            width: 100%;
             border: none;
             background-color: transparent;
             color: #fff;
@@ -40,13 +46,11 @@
         }
 
         .compTitle {
-            position: absolute;
-            width: 100px;
-            padding: 5px;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 20px;
-            @media screen and (min-width: 800px) {                
+            padding: 1em;
+            @media screen and (min-width: 1024px) {                
+                width: 100px;
+                padding: .6em;
+                position: absolute;
                 left: -110px;
                 text-align: center;
                 top: 50%;
@@ -64,7 +68,7 @@
     }
 
     .line {
-        @media screen and (min-width: 800px){
+        @media screen and (min-width: 1024px){
             width: 2px;
             height: 50px;
         }
