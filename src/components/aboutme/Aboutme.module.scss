@@ -36,13 +36,15 @@
         }
 
         button {
+            transition: all .1s ease-in-out;
             align-self: flex-start;
             background-color: #d22424;
             padding: 1em 1.8em;
             border: 2px solid #d2242400;
-            border: none;
+            border: thin solid #00000000;
             color: #fff;
             font-size: 1em;
+            cursor: pointer;
         }
 
 
